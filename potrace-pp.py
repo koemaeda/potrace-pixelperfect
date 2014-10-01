@@ -63,6 +63,10 @@ imBig = imBW.resize((imSrc.size[0]*scale, imSrc.size[1]*scale))
 #
 args = sys.argv
 args[0] = 'potrace'
+
+if not '-r' in args: # Add default resolution (72) if not specified
+	args += ['-r', '72'] 
+
 args = map(lambda i: # Multiply the resolution parameter (-r)
 		str( int(args[i]) * scale ) if args[i-1] == '-r' else args[i],
 	range(len(args)))
