@@ -3,6 +3,9 @@
 #
 #   Pixel-perfect potrace for FontForge
 #
+#	Copyright 2014 by Guilherme Maeda
+#	https://github.com/koemaeda/potrace-pixelperfect
+#
 #----------------------------------------------------------------------------
 #
 #  This program is free software: you can redistribute it and/or modify
